@@ -2,11 +2,13 @@ $gold: #ffb923
 $green: #8db16d
 $gray: #303135
 $light-gray: #959595
+$input-width: 345px
 
 html, body
 	margin: 0
 	padding: 0
 	font-family: "Work Sans", sans-serif
+	font-weight: 500
 
 a, a:hover
 	color: inherit
@@ -17,11 +19,11 @@ a:link, a:hover, a:active
 .navigation
 	display: flex
 	align-items: center
-	font-weight: bold
 	padding: 30px 45px
 
 .title
 	margin-right: auto
+	font-weight: bold
 	font-family: "Roboto Slab", sans-serif
 	font-size: 22px
 
@@ -29,15 +31,14 @@ a:link, a:hover, a:active
 	color: $green
 
 .menu-item
-	font-size: 13px
+	font-size: 15px
 	padding: 0 20px
-	text-transform: uppercase
 	a
 		color: black
 
 .open-bubble
 	color: $green
-	border-radius: 20px
+	border-radius: 2px
 	padding: 6px 15px
 	border: 2px solid $green
 	margin: 0 10px 0 5px
@@ -49,47 +50,71 @@ a:link, a:hover, a:active
 .filled-bubble
 	background-color: $green
 	color: white
-	border-radius: 20px
+	border-radius: 2px
 	padding: 8px 15px
 
 .link
 	color: $green
+	margin: auto
 	&:hover
 		color: $green
 
+form
+	width: 400px
+	margin: auto
+	text-align: center
+
 .login-form
 	width: 100%
-	text-align: center
 	padding: 25px 0px
+	h2
+		color: $green
+		margin-top: 0
+		margin-bottom: 35px
 
-.fa-user, .fa-lock
-	margin-right: 15px
+.fa-envelope, .fa-lock, .fa-user, .fa-map-marker
+	margin: 0 20px 0 6px
 	font-size: 11px
 	color: $gray
 
 .input-container
 	margin: auto
-	margin-top: 20px
-	width: 300px
+	width: $input-width
 	border-bottom: 1px solid $light-gray
+	text-align: left
+
+.form-label
+	margin: 0 auto
+	text-align: left
+	width: $input-width
+	margin-top: 30px
 
 .form-input
 	border: 0px solid transparent
 	margin-bottom: 1px
 	height: 35px
-	width: 250px
+	width: 300px
+	&:focus
+		outline: none
+
+.password
+	width: $input-width
+	text-align: right
+	margin: 10px auto 0
 
 .submit
 	background-color: $green
 	border: 0px solid transparent
 	color: white
 	padding: 10px 15px
-	width: 300px
+	width: $input-width
 	text-transform: uppercase
 	font-weight: bold
 	letter-spacing: 1.2px
-	margin-top: 35px
+	margin: 20px auto 15px
 	border-radius: 2px
+	&:focus
+		outline: none
 
 .splash-image
 	width: 100%
@@ -99,3 +124,6 @@ footer
 	color: white
 	text-align: center
 	padding: 10px
+	position: absolute
+	bottom: 0
+	width: 100%

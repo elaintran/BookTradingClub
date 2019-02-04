@@ -17,6 +17,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   	<link rel="stylesheet" href="style.css">
@@ -36,10 +37,32 @@
 	<a href="signup.html"><div class="menu-item filled-bubble">Sign Up</div></a>
 </div>
 
-<img class="splash-image" src="splash.png">
+<div class="login-form">
+	<form>
+		<h2>Create Your Account</h2>
+		<p class="form-label">Full Name</p>
+		<div class="input-container">
+			<i class="fas fa-user"></i><input type="text" class="form-input" placeholder="Enter Your Name" required>
+		</div>
+		<p class="form-label">Location</p>
+		<div class="input-container">
+			<i class="fa fa-map-marker"></i><input type="text" class="form-input" placeholder="City, State" required>
+		</div>
+		<p class="form-label">Email Address</p>
+		<div class="input-container">
+			<i class="fas fa-envelope"></i><input type="text" class="form-input" placeholder="example@gmail.com" required>
+		</div>
+		<p class="form-label">Password</p>
+		<div class="input-container">
+			<i class="fas fa-lock"></i><input type="text" class="form-input" placeholder="Enter Your Password" required>
+		</div>
+		<input type="submit" class="submit" value="Sign Up">
+		<p>Already have an account? <a href="login.html" class="link">Login.</a></p>
+	</form>
+</div>
 
 <!--Footer-->
-<footer>Copyright © 2019 Elain Tran</footer>
+<!--<footer>Copyright © 2019 Elain Tran</footer>-->
 
 
 <!--Javascript-->

@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500; }
 
 a, a:hover {
   color: inherit; }
@@ -12,11 +13,11 @@ a:link, a:hover, a:active {
 .navigation {
   display: flex;
   align-items: center;
-  font-weight: bold;
   padding: 30px 45px; }
 
 .title {
   margin-right: auto;
+  font-weight: bold;
   font-family: "Roboto Slab", sans-serif;
   font-size: 22px; }
 
@@ -24,15 +25,14 @@ a:link, a:hover, a:active {
   color: #8db16d; }
 
 .menu-item {
-  font-size: 13px;
-  padding: 0 20px;
-  text-transform: uppercase; }
+  font-size: 15px;
+  padding: 0 20px; }
   .menu-item a {
     color: black; }
 
 .open-bubble {
   color: #8db16d;
-  border-radius: 20px;
+  border-radius: 2px;
   padding: 6px 15px;
   border: 2px solid #8db16d;
   margin: 0 10px 0 5px; }
@@ -44,47 +44,71 @@ a:link, a:hover, a:active {
 .filled-bubble {
   background-color: #8db16d;
   color: white;
-  border-radius: 20px;
+  border-radius: 2px;
   padding: 8px 15px; }
 
 .link {
-  color: #8db16d; }
+  color: #8db16d;
+  margin: auto; }
   .link:hover {
     color: #8db16d; }
 
+form {
+  width: 400px;
+  margin: auto;
+  text-align: center; }
+
 .login-form {
   width: 100%;
-  text-align: center;
   padding: 25px 0px; }
+  .login-form h2 {
+    color: #8db16d;
+    margin-top: 0;
+    margin-bottom: 35px; }
 
-.fa-user, .fa-lock {
-  margin-right: 15px;
+.fa-envelope, .fa-lock, .fa-user, .fa-map-marker {
+  margin: 0 20px 0 6px;
   font-size: 11px;
   color: #303135; }
 
 .input-container {
   margin: auto;
-  margin-top: 20px;
-  width: 300px;
-  border-bottom: 1px solid #959595; }
+  width: 345px;
+  border-bottom: 1px solid #959595;
+  text-align: left; }
+
+.form-label {
+  margin: 0 auto;
+  text-align: left;
+  width: 345px;
+  margin-top: 30px; }
 
 .form-input {
   border: 0px solid transparent;
   margin-bottom: 1px;
   height: 35px;
-  width: 250px; }
+  width: 300px; }
+  .form-input:focus {
+    outline: none; }
+
+.password {
+  width: 345px;
+  text-align: right;
+  margin: 10px auto 0; }
 
 .submit {
   background-color: #8db16d;
   border: 0px solid transparent;
   color: white;
   padding: 10px 15px;
-  width: 300px;
+  width: 345px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1.2px;
-  margin-top: 35px;
+  margin: 20px auto 15px;
   border-radius: 2px; }
+  .submit:focus {
+    outline: none; }
 
 .splash-image {
   width: 100%; }
@@ -93,6 +117,9 @@ footer {
   background-color: #303135;
   color: white;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
