@@ -3,8 +3,10 @@ html, body {
   padding: 0;
   font-family: "Work Sans", sans-serif; }
 
-a, a:link, a:hover, a:active {
-  color: inherit;
+a, a:hover {
+  color: inherit; }
+
+a:link, a:hover, a:active {
   text-decoration: none; }
 
 .navigation {
@@ -21,10 +23,12 @@ a, a:link, a:hover, a:active {
 .highlight {
   color: #8db16d; }
 
-.link {
+.menu-item {
   font-size: 13px;
   padding: 0 20px;
   text-transform: uppercase; }
+  .menu-item a {
+    color: black; }
 
 .open-bubble {
   color: #8db16d;
@@ -42,6 +46,45 @@ a, a:link, a:hover, a:active {
   color: white;
   border-radius: 20px;
   padding: 8px 15px; }
+
+.link {
+  color: #8db16d; }
+  .link:hover {
+    color: #8db16d; }
+
+.login-form {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0px; }
+
+.fa-user, .fa-lock {
+  margin-right: 15px;
+  font-size: 11px;
+  color: #303135; }
+
+.input-container {
+  margin: auto;
+  margin-top: 20px;
+  width: 300px;
+  border-bottom: 1px solid #959595; }
+
+.form-input {
+  border: 0px solid transparent;
+  margin-bottom: 1px;
+  height: 35px;
+  width: 250px; }
+
+.submit {
+  background-color: #8db16d;
+  border: 0px solid transparent;
+  color: white;
+  padding: 10px 15px;
+  width: 300px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  margin-top: 35px;
+  border-radius: 2px; }
 
 .splash-image {
   width: 100%; }

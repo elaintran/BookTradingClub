@@ -19,6 +19,7 @@
 
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   	<link rel="stylesheet" href="style.css">
 
 
@@ -36,7 +37,18 @@
 	<a href="signup.html"><div class="menu-item filled-bubble">Sign Up</div></a>
 </div>
 
-<img class="splash-image" src="splash.png">
+<div class="login-form">
+	<form>
+		<div class="input-container">
+			<i class="fas fa-user"></i><input type="text" class="form-input" placeholder="Username" required>
+		</div>
+		<div class="input-container">
+			<i class="fas fa-lock"></i><input type="text" class="form-input" placeholder="Password" required>
+		</div>
+		<p><input type="submit" class="submit" value="Login"></p>
+	</form>
+	<p>New user? <a href="signup.html" class="link">Sign Up.</a></p>
+</div>
 
 <!--Footer-->
 <footer>Copyright © 2019 Elain Tran</footer>
