@@ -69,10 +69,29 @@ a:link, a:active {
   background-size: cover;
   background-position: bottom;
   width: 40%;
-  height: 100%; }
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.round-bubble {
+  color: #8db16d;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px 25px;
+  border: 2px solid #8db16d;
+  border-radius: 20px;
+  text-transform: uppercase; }
+  .round-bubble:hover {
+    background-color: #8db16d;
+    color: white;
+    transition: 0.2s; }
 
 form {
   margin: auto;
+  width: 70%;
+  max-width: 425px;
   text-align: center; }
 
 .login-form {
@@ -95,26 +114,25 @@ form {
 .input-container {
   margin: auto;
   margin-bottom: 15px;
-  width: 350px;
   border-bottom: 1px solid #959595;
   text-align: left; }
 
 .form-label {
   margin: 0 auto;
   text-align: left;
-  width: 350px;
+  width: 100%;
   margin-top: 30px; }
 
 .form-input {
   border: 0px solid transparent;
   margin-bottom: 1px;
   height: 35px;
-  width: 285px; }
+  width: 85%; }
   .form-input:focus {
     outline: none; }
 
 .password {
-  width: 350px;
+  width: 100%;
   text-align: right;
   margin: auto; }
 
@@ -123,7 +141,7 @@ form {
   border: 0px solid transparent;
   color: white;
   padding: 10px 15px;
-  width: 350px;
+  width: 100%;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   margin: 20px auto 15px;
@@ -141,14 +159,20 @@ footer {
   padding: 20px;
   font-weight: normal; }
 
-@media(max-width: 768px) {
-  .menu-item {
-    display: none; } }
 @media(max-width: 1024px) {
   .side-panel {
     display: none; }
 
   .login-form {
     width: 100%; } }
+@media(max-width: 768px) {
+  .menu-item {
+    display: none; } }
+@media(max-width: 414px) {
+  .main-panel {
+    height: auto; }
+
+  .login-form h2 {
+    font-size: 25px; } }
 
 /*# sourceMappingURL=style.css.map */

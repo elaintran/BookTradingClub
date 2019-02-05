@@ -2,7 +2,7 @@ $gold: #ffb923
 $green: #8db16d
 $gray: #303135
 $light-gray: #959595
-$input-width: 350px
+$input-width: 100%
 
 html, body
 	margin: 0
@@ -76,9 +76,28 @@ a:link, a:active
 	background-position: bottom
 	width: 40%
 	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+
+.round-bubble
+	color: $green
+	font-size: 12px
+	letter-spacing: 1px
+	padding: 5px 25px
+	border: 2px solid $green
+	border-radius: 20px
+	text-transform: uppercase
+	&:hover
+		background-color: $green
+		color: white
+		transition: 0.2s
 
 form
 	margin: auto
+	width: 70%
+	max-width: 425px
 	text-align: center
 
 .login-form
@@ -101,7 +120,6 @@ form
 .input-container
 	margin: auto
 	margin-bottom: 15px
-	width: $input-width
 	border-bottom: 1px solid $light-gray
 	text-align: left
 
@@ -115,7 +133,7 @@ form
 	border: 0px solid transparent
 	margin-bottom: 1px
 	height: 35px
-	width: 285px
+	width: 85%
 	&:focus
 		outline: none
 
@@ -147,12 +165,19 @@ footer
 	padding: 20px
 	font-weight: normal
 
-@media(max-width: 768px)
-	.menu-item
-		display: none
-
 @media(max-width: 1024px)
 	.side-panel
 		display: none
 	.login-form
 		width: 100%
+
+@media(max-width: 768px)
+	.menu-item
+		display: none
+
+@media(max-width: 414px)
+	.main-panel
+		height: auto
+	.login-form
+		h2
+			font-size: 25px
