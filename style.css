@@ -15,7 +15,10 @@ a:link, a:active {
 .navigation {
   display: flex;
   align-items: center;
-  padding: 30px 45px; }
+  padding: 30px 45px;
+  position: absolute;
+  width: 100%;
+  z-index: 10; }
 
 .title {
   margin-right: auto;
@@ -59,21 +62,29 @@ a:link, a:active {
   .link:hover, .link:visited {
     color: #8db16d; }
 
+.panel-wrapper {
+  position: relative;
+  height: 100%; }
+
 .main-panel {
-  display: flex;
+  position: relative;
   width: 100%;
   height: 100%; }
 
-.side-panel {
+.panel-background {
   background: url(img/side-image.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom; }
+
+.panel-content {
   width: 40%;
+  min-height: 600px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  position: absolute; }
 
 .round-bubble {
   color: #8db16d;
@@ -92,12 +103,15 @@ form {
   margin: auto;
   width: 70%;
   max-width: 425px;
-  text-align: center; }
+  text-align: center;
+  padding: 90px 0; }
 
 .login-form {
   width: 60%;
+  height: 100%;
+  margin-left: 40%;
   display: flex;
-  padding: 45px 0px; }
+  padding: 40px 0px; }
   .login-form h2 {
     color: #8db16d;
     margin-top: 0;
@@ -160,19 +174,29 @@ footer {
   font-weight: normal; }
 
 @media(max-width: 1024px) {
-  .side-panel {
+  .main-panel {
+    height: auto; }
+
+  .panel-content {
     display: none; }
 
   .login-form {
-    width: 100%; } }
+    width: 100%;
+    margin-left: 0; } }
 @media(max-width: 768px) {
   .menu-item {
     display: none; } }
 @media(max-width: 414px) {
-  .main-panel {
-    height: auto; }
-
   .login-form h2 {
-    font-size: 25px; } }
+    font-size: 25px; }
+
+  form {
+    width: 80%; } }
+@media(min-height: 600px) {
+  .panel-content {
+    position: fixed; } }
+@media(max-height: 600px) {
+  .panel-wrapper {
+    height: auto; } }
 
 /*# sourceMappingURL=style.css.map */
